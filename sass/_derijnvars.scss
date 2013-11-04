@@ -1,0 +1,22 @@
+
+
+// MATEN
+
+$base: 1;
+$scale: 1.618;
+
+$step1: $base;
+$step2: $step1 * $base;
+$step3: $step2 * $base;
+$step4: $step3 * $base;
+$step5: $step4 * $base;
+$step6: $step5 * $base;
+$step7: $step6 * $base;
+
+$step-1: $step1 / $base;
+$step-2: $step-1 / $base;
+$step-3: $step-2 / $base;
+$step-4: $step-3 / $base;
+$step-5: $step-4 / $base;
+$step-6: $step-5 / $base;
+$step-7: $step-6 / $base;

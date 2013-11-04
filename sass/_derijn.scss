@@ -1,0 +1,33 @@
+body {
+	background-image: url('../images/grey_wash_wall.png');
+}
+
+
+header {
+	padding: $step2 + em;
+	width: 100%;
+		nav {
+			min-width: 50%;
+			margin: 0 auto;
+				ul {
+					overflow: hidden;
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					display: flex;
+					justify-content: center;
+
+						li {
+							float: left;
+							margin: 0 $step-2 + em;
+								a {
+									text-decoration: none;
+								}
+						}
+				}
+		}
+}
+
+.image_wrap img {
+	width: 100%;
+}
