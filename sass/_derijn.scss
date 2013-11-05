@@ -1,31 +1,100 @@
 body {
-	background-image: url('../images/grey_wash_wall.png');
+	background-image: url('../images/dvsup.png');
+	color: lighten($primary-color, 16);
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerFont;
+}
+
+h1, h2, h3 {
+	text-shadow: 1.2px 1.2px 0px $black;
+	color: $primary-color;
+}
+
+h1 {
+	text-shadow: 0.2px 2px 0px $white;
+}
+
+a {
+	color: $white;
+	transition: color 0.3s ease-out;
+		&:hover {
+			color: darken($white, 26);
+		}
+}
+
+.row {
+	max-width: 68em;
+}
+
+.wood {
+	// background-image: url('../images/dark_wood.png');
+}
 
 header {
 	padding: $step2 + em;
 	width: 100%;
+		h1 {
+			max-width: 34%;
+		}
 		nav {
 			min-width: 50%;
 			margin: 0 auto;
+			overflow: hidden;
 				ul {
 					overflow: hidden;
 					list-style: none;
 					margin: 0;
 					padding: 0;
-					display: flex;
-					justify-content: center;
-
+					float: right;
+					border-bottom: 2px solid $darkBlue;
 						li {
 							float: left;
-							margin: 0 $step-2 + em;
+							margin: 0 0 0 $step3 + em;
+							padding: 0 $step-2 + em;
+							// background-color: $darkBlue;
+							// border-radius: 3px;
 								a {
 									text-decoration: none;
+									color: $lightBlue;
 								}
+
 						}
 				}
 		}
+}
+
+#sideBarWrap {
+	overflow: hidden;
+		ul {
+			list-style: none;
+			float: right;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			width: 100%;
+				li {
+					background-color: $darkBlue;
+					text-align: right;
+					font-size: $step2 + em;
+					padding: $step-3 + em $step-2 + em;
+					margin: $step-1 + em 0 0;
+					border-radius: 3px 0px 0px 3px;
+					min-width: 50%;
+						&:first-of-type {
+							margin-top: 0;
+						}
+						a {
+							display: block;
+							width: 100%;
+						}
+						table td {
+							font-size: $step1 + rem;
+						}
+				}
+		}
+
 }
 
 .image_wrap img {

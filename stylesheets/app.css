@@ -7217,41 +7217,141 @@ a.th {
   max-width: 800px;
 }
 
+@font-face {
+  font-family: 'deming_epregular';
+  src: url("../fonts/deming/deming_ep-webfont.eot");
+  src: url("../fonts/deming/deming_ep-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/deming/deming_ep-webfont.woff") format("woff"), url("../fonts/deming/deming_ep-webfont.ttf") format("truetype"), url("../fonts/deming/deming_ep-webfont.svg#deming_epregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ambleregular';
+  src: url("../fonts/Amble/amble_regular_macroman/Amble-Regular-webfont.eot");
+  src: url("../fonts/Amble/amble_regular_macroman/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Amble/amble_regular_macroman/Amble-Regular-webfont.woff") format("woff"), url("../fonts/Amble/amble_regular_macroman/Amble-Regular-webfont.ttf") format("truetype"), url("../fonts/Amble/amble_regular_macroman/Amble-Regular-webfont.svg#ambleregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'black_roseregular';
+  src: url("../fonts/blackrose_regular_macroman/BLACKR-webfont.eot");
+  src: url("../fonts/blackrose_regular_macroman/BLACKR-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blackrose_regular_macroman/BLACKR-webfont.woff") format("woff"), url("../fonts/blackrose_regular_macroman/BLACKR-webfont.ttf") format("truetype"), url("../fonts/blackrose_regular_macroman/BLACKR-webfont.svg#black_roseregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../sass/_derijn.scss */
 body {
-  background-image: url("../images/grey_wash_wall.png");
+  background-image: url("../images/dvsup.png");
+  color: #858ac6;
 }
 
 /* line 6, ../sass/_derijn.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Tienne", "Original Surfer", "deming_epregular", serif;
+}
+
+/* line 10, ../sass/_derijn.scss */
+h1, h2, h3 {
+  text-shadow: 1.2px 1.2px 0px #1f2921;
+  color: #4f57aa;
+}
+
+/* line 15, ../sass/_derijn.scss */
+h1 {
+  text-shadow: 0.2px 2px 0px #f9f9f9;
+}
+
+/* line 19, ../sass/_derijn.scss */
+a {
+  color: #f9f9f9;
+  transition: color 0.3s ease-out;
+}
+/* line 22, ../sass/_derijn.scss */
+a:hover {
+  color: #b7b7b7;
+}
+
+/* line 27, ../sass/_derijn.scss */
+.row {
+  max-width: 68em;
+}
+
+/* line 35, ../sass/_derijn.scss */
 header {
-  padding: 1em;
+  padding: 1.618em;
   width: 100%;
 }
-/* line 9, ../sass/_derijn.scss */
+/* line 38, ../sass/_derijn.scss */
+header h1 {
+  max-width: 34%;
+}
+/* line 41, ../sass/_derijn.scss */
 header nav {
   min-width: 50%;
   margin: 0 auto;
+  overflow: hidden;
 }
-/* line 12, ../sass/_derijn.scss */
+/* line 45, ../sass/_derijn.scss */
 header nav ul {
   overflow: hidden;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  float: right;
+  border-bottom: 2px solid #263a55;
 }
-/* line 20, ../sass/_derijn.scss */
+/* line 52, ../sass/_derijn.scss */
 header nav ul li {
   float: left;
-  margin: 0 1em;
+  margin: 0 0 0 2.61792em;
+  padding: 0 0.38198em;
 }
-/* line 23, ../sass/_derijn.scss */
+/* line 58, ../sass/_derijn.scss */
 header nav ul li a {
   text-decoration: none;
+  color: #bbd6e1;
 }
 
-/* line 31, ../sass/_derijn.scss */
+/* line 68, ../sass/_derijn.scss */
+#sideBarWrap {
+  overflow: hidden;
+}
+/* line 70, ../sass/_derijn.scss */
+#sideBarWrap ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 77, ../sass/_derijn.scss */
+#sideBarWrap ul li {
+  background-color: #263a55;
+  text-align: right;
+  font-size: 1.618em;
+  padding: 0.23608em 0.38198em;
+  margin: 0.61805em 0 0;
+  border-radius: 3px 0px 0px 3px;
+  min-width: 50%;
+}
+/* line 85, ../sass/_derijn.scss */
+#sideBarWrap ul li:first-of-type {
+  margin-top: 0;
+}
+/* line 88, ../sass/_derijn.scss */
+#sideBarWrap ul li a {
+  display: block;
+  width: 100%;
+}
+/* line 92, ../sass/_derijn.scss */
+#sideBarWrap ul li table td {
+  font-size: 1rem;
+}
+
+/* line 100, ../sass/_derijn.scss */
 .image_wrap img {
   width: 100%;
 }
