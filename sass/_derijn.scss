@@ -1,6 +1,9 @@
 body {
 	background-image: url('../images/dvsup.png');
 	color: lighten($primary-color, 16);
+	text-rendering: optimizeLegibility;
+	font-family: $bodyFont;
+	font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,8 +92,12 @@ header {
 							display: block;
 							width: 100%;
 						}
+						table {
+							width: 100%;
+						}
 						table td {
 							font-size: $step1 + rem;
+							text-align: left;
 						}
 				}
 		}

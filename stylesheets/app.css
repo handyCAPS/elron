@@ -7245,55 +7245,58 @@ a.th {
 body {
   background-image: url("../images/dvsup.png");
   color: #858ac6;
+  text-rendering: optimizeLegibility;
+  font-family: "Radley", serif;
+  font-size: 20px;
 }
 
-/* line 6, ../sass/_derijn.scss */
+/* line 9, ../sass/_derijn.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Tienne", "Original Surfer", "deming_epregular", serif;
+  font-family: "Cherry Swash", "Tienne", "Original Surfer", "deming_epregular", serif;
 }
 
-/* line 10, ../sass/_derijn.scss */
+/* line 13, ../sass/_derijn.scss */
 h1, h2, h3 {
   text-shadow: 1.2px 1.2px 0px #1f2921;
   color: #4f57aa;
 }
 
-/* line 15, ../sass/_derijn.scss */
+/* line 18, ../sass/_derijn.scss */
 h1 {
   text-shadow: 0.2px 2px 0px #f9f9f9;
 }
 
-/* line 19, ../sass/_derijn.scss */
+/* line 22, ../sass/_derijn.scss */
 a {
   color: #f9f9f9;
   transition: color 0.3s ease-out;
 }
-/* line 22, ../sass/_derijn.scss */
+/* line 25, ../sass/_derijn.scss */
 a:hover {
   color: #b7b7b7;
 }
 
-/* line 27, ../sass/_derijn.scss */
+/* line 30, ../sass/_derijn.scss */
 .row {
   max-width: 68em;
 }
 
-/* line 35, ../sass/_derijn.scss */
+/* line 38, ../sass/_derijn.scss */
 header {
   padding: 1.618em;
   width: 100%;
 }
-/* line 38, ../sass/_derijn.scss */
+/* line 41, ../sass/_derijn.scss */
 header h1 {
   max-width: 34%;
 }
-/* line 41, ../sass/_derijn.scss */
+/* line 44, ../sass/_derijn.scss */
 header nav {
   min-width: 50%;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 45, ../sass/_derijn.scss */
+/* line 48, ../sass/_derijn.scss */
 header nav ul {
   overflow: hidden;
   list-style: none;
@@ -7302,23 +7305,23 @@ header nav ul {
   float: right;
   border-bottom: 2px solid #263a55;
 }
-/* line 52, ../sass/_derijn.scss */
+/* line 55, ../sass/_derijn.scss */
 header nav ul li {
   float: left;
   margin: 0 0 0 2.61792em;
   padding: 0 0.38198em;
 }
-/* line 58, ../sass/_derijn.scss */
+/* line 61, ../sass/_derijn.scss */
 header nav ul li a {
   text-decoration: none;
   color: #bbd6e1;
 }
 
-/* line 68, ../sass/_derijn.scss */
+/* line 71, ../sass/_derijn.scss */
 #sideBarWrap {
   overflow: hidden;
 }
-/* line 70, ../sass/_derijn.scss */
+/* line 73, ../sass/_derijn.scss */
 #sideBarWrap ul {
   list-style: none;
   float: right;
@@ -7327,7 +7330,7 @@ header nav ul li a {
   overflow: hidden;
   width: 100%;
 }
-/* line 77, ../sass/_derijn.scss */
+/* line 80, ../sass/_derijn.scss */
 #sideBarWrap ul li {
   background-color: #263a55;
   text-align: right;
@@ -7337,21 +7340,26 @@ header nav ul li a {
   border-radius: 3px 0px 0px 3px;
   min-width: 50%;
 }
-/* line 85, ../sass/_derijn.scss */
+/* line 88, ../sass/_derijn.scss */
 #sideBarWrap ul li:first-of-type {
   margin-top: 0;
 }
-/* line 88, ../sass/_derijn.scss */
+/* line 91, ../sass/_derijn.scss */
 #sideBarWrap ul li a {
   display: block;
   width: 100%;
 }
-/* line 92, ../sass/_derijn.scss */
+/* line 95, ../sass/_derijn.scss */
+#sideBarWrap ul li table {
+  width: 100%;
+}
+/* line 98, ../sass/_derijn.scss */
 #sideBarWrap ul li table td {
   font-size: 1rem;
+  text-align: left;
 }
 
-/* line 100, ../sass/_derijn.scss */
+/* line 107, ../sass/_derijn.scss */
 .image_wrap img {
   width: 100%;
 }
