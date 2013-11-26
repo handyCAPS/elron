@@ -1,6 +1,7 @@
 body {
-	background-image: url('../images/dvsup.png');
+	// background-image: url('../images/dvsup.png');
 	color: lighten($primary-color, 16);
+	background-color: #848484;
 	text-rendering: optimizeLegibility;
 	font-family: $bodyFont;
 	font-size: 20px;
@@ -60,7 +61,7 @@ header {
 							// border-radius: 3px;
 								a {
 									text-decoration: none;
-									color: $lightBlue;
+									color: $darkBlue;
 								}
 
 						}
@@ -106,4 +107,21 @@ header {
 
 .image_wrap img {
 	width: 100%;
+}
+
+#attSlider {
+	margin-top: $step2 + em;
+		div.image_wrap {
+			width: 25%;
+			float: left;
+			display: inline;
+		}
+}
+
+p {
+	background-color: $darkBlue;
+	padding: $step-1 + em;
+	line-height: 1.2;
+	color: $white;
+	border-radius: 3px;
 }
