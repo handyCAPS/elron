@@ -41,7 +41,10 @@ header {
 	padding: $step2 + em;
 	width: 100%;
 		h1 {
-			max-width: 34%;
+			max-width: 50%;
+				img {
+					width: 100%;
+				}
 		}
 		nav {
 			min-width: 50%;
