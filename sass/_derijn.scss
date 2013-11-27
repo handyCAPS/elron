@@ -1,10 +1,11 @@
 body {
-	// background-image: url('../images/dvsup.png');
+	background: url('../images/diagonales_decalees.png'), #848484;
 	color: lighten($primary-color, 16);
-	background-color: #848484;
+	// background-color: ;
 	text-rendering: optimizeLegibility;
 	font-family: $bodyFont;
-	font-size: 20px;
+	font-size: 18px;
+	line-height: 1.16;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -69,6 +70,10 @@ header {
 		}
 }
 
+#contentWrap, #pageFooter {
+	padding: 0 13px;
+}
+
 #sideBarWrap {
 	overflow: hidden;
 		ul {
@@ -109,19 +114,35 @@ header {
 	width: 100%;
 }
 
-#attSlider {
+#attSliderWrapper {
 	margin-top: $step2 + em;
+	float: right;
+	width: 50%;
+	background-color: $darkBlue;
+	border-radius: 0 3px 3px;
+	position: relative;
 		div.image_wrap {
 			width: 25%;
 			float: left;
 			display: inline;
+			margin: 0 $step1 + rem $step-1 + rem 0;
+			position: relative;
+		}
+		h2 {
+			margin-bottom: 0;
+			color: $white;
+			text-shadow: 1.6px 2.2px 0px $black;
+			position: relative;
 		}
 }
 
 p {
 	background-color: $darkBlue;
 	padding: $step-1 + em;
-	line-height: 1.2;
 	color: $white;
 	border-radius: 3px;
+}
+
+.owl-carousel {
+	padding-top: 0;
 }
