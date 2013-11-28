@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="javascripts/owl/owl.carousel.css">
   <link rel="stylesheet" href="javascripts/owl/owl.theme.css">
-  <link href='http://fonts.googleapis.com/css?family=Original+Surfer|Tienne|Cherry+Swash|Radley' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Original+Surfer|Cherry+Swash|PT+Sans|Roboto+Slab' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/app.css">
 
 
@@ -27,7 +27,7 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
-		<h1 class="large-5 columns"><img src="images/herenkapper-derijn-alphen.png" alt="Herenkapper de Rijn Alphen a/d Rijn"></h1>
+		<h1 class="small-4 columns"><img src="images/herenkapper-derijn-alphen.png" alt="Herenkapper de Rijn Alphen a/d Rijn"></h1>
 		<section id="attSliderWrapper">
 		<section id="attSlider" class="clearfix">
 			<article class="clearfix">
@@ -55,12 +55,18 @@
 		<section class="large-8 columns">
 			<div id="mainContentWrap" class="row">
 
-				<section id="sliderWrap" class="large-12 columns">
+				<section id="sliderWrap" class="">
 					<div class="image_wrap">
 						<img src="images/image.jpeg">
 					</div><!--  end .image_wrap  -->
+					<div class="image_wrap">
+						<img src="images/image_2.jpeg">
+					</div><!--  end .image_wrap  -->
+					<div class="image_wrap">
+						<img src="images/image_1.jpeg">
+					</div><!--  end .image_wrap  -->
 				</section><!--  end sliderWrap  -->
-				<section class="large-12 columns wood">
+				<article class="" id="welcome">
 					<h2>Header H2</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -68,11 +74,11 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</section>
+				</article>
 
 			</div><!--  end mainContentWrap  -->
 		</section>
-		<section id="sideBarWrap" class="large-4 columns wood">
+		<section id="sideBarWrap" class="large-4 columns">
 			<ul>
 				<li><a href="#">Aanbieding</a></li>
 				<li><a href="#">Acties</a></li>
@@ -97,38 +103,57 @@
 						</tr>
 					</table>
 				</li>
+				<li>
+					<img src="http://lorempixel.com/300/420/fashion
+					" alt="Placeholder">
+				</li>
 			</ul>
 		</section><!--  end sideBarWrap  -->
 	</div><!--  end contentWrap  -->
 	<footer id="pageFooter" class="row">
-		<section class="large-12 columns wood">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section class="">
+			<article class="large-4 columns">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+			<article class="large-4 columns">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+			<article class="large-4 columns">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
 		</section>
 	</footer>
 </div><!--  end outerWrap  -->
 <script src="javascripts/vendor/jquery.js" type="text/javascript"></script>
-<!-- <script src="javascripts/krakatoa/krakatoa.js" type="text/javascript"></script> -->
-<!-- <script src="javascripts/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script> -->
 <script src="javascripts/owl/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function() {
-    	// $('#attSlider').krakatoa({
-    	// 	buttons: false,
-    	// 	arrows : false,
-    	// 	width : '100%',
-    	// 	height: 'auto'
-    	// });
     	$('#attSlider').owlCarousel({
     		singleItem: true,
     		autoPlay: 10000,
     		stopOnHover: true,
     		transitionStyle: 'backSlide',
     		slideSpeed: 600
+    	});
+    	$('#sliderWrap').owlCarousel({
+    		singleItem: true,
+    		autoPlay: 12000,
+    		autoHeight: true
     	});
     });
   </script>

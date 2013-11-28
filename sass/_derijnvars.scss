@@ -35,12 +35,13 @@ $success-color: #5da423;
 
 $darkPurple: #281451;
 $lightPurple: #7B4DA5;
-$grey: #EDE9E6;
+$grey: #848484;
+$lightGrey: #F3F3F3;
 $green: #60B983;
 $teal: #309784;
 
 $darkBlue: #263A55;
-$lightBlue: #BBD6E1;
+$lightBlue: desaturate(#BBD6E1, 20);
 $beige: #E8E7AF;
 $mud: #BB9E8E;
 
@@ -48,6 +49,10 @@ $body-bg: #fff;
 $body-font-color: $white;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-$headerFont: 'Cherry Swash', 'Tienne', 'Original Surfer', 'deming_epregular', serif;
+$headerFont: 'Roboto Slab', 'Cherry Swash', serif;
 
-$bodyFont: 'Radley', serif;
+$bodyFont: 'PT Sans', serif;
+
+.row {
+	max-width: 72em;
+}

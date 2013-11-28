@@ -1,10 +1,13 @@
+* {
+	box-sizing: content-box;
+}
+
 body {
-	background: url('../images/diagonales_decalees.png'), #848484;
+	background: url('../images/diagonales_decalees.png'), $grey;
 	color: lighten($primary-color, 16);
-	// background-color: ;
 	text-rendering: optimizeLegibility;
 	font-family: $bodyFont;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.16;
 }
 
@@ -13,8 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-	text-shadow: 1.2px 1.2px 0px $black;
-	color: $primary-color;
+	text-shadow: 1.2px 1.2px 0px $white;
+	color: $darkBlue;
 }
 
 h1 {
@@ -30,11 +33,7 @@ a {
 }
 
 .row {
-	max-width: 68em;
-}
-
-.wood {
-	// background-image: url('../images/dark_wood.png');
+	max-width: 72em;
 }
 
 header {
@@ -77,8 +76,10 @@ header {
 	padding: 0 13px;
 }
 
+
 #sideBarWrap {
 	overflow: hidden;
+	margin-bottom: $step1 + rem;
 		ul {
 			list-style: none;
 			float: right;
@@ -103,10 +104,15 @@ header {
 						}
 						table {
 							width: 100%;
+							margin-bottom: $step-1 + rem;
 						}
 						table td {
 							font-size: $step1 + rem;
 							text-align: left;
+						}
+						img {
+							width: 90%;
+							margin: $step1 + rem;
 						}
 				}
 		}
@@ -120,7 +126,7 @@ header {
 #attSliderWrapper {
 	margin-top: $step2 + em;
 	float: right;
-	width: 50%;
+	width: 66%;
 	background-color: $darkBlue;
 	border-radius: 0 3px 3px;
 	position: relative;
@@ -139,13 +145,39 @@ header {
 		}
 }
 
-p {
+article {
 	background-color: $darkBlue;
-	padding: $step-1 + em;
+	padding: $step1 + rem $step1 + rem $step-1 + rem;
 	color: $white;
 	border-radius: 3px;
+		h2 {
+			background-color: $lightBlue;
+			position: relative;
+			left: -($step1) + rem;
+			display: inline-block;
+			padding: $step-3 + rem $step-1 + rem;
+		}
+		p {
+			background-color: $lightGrey;
+			color: $black;
+			padding: $step-2 + rem $step-1 + rem;
+			border-radius: 3px;
+		}
 }
 
 .owl-carousel {
 	padding-top: 0;
+}
+
+#welcome {
+	margin: $step1 + rem 0;
+		h2 {
+			margin-top: 0;
+		}
+}
+
+#pageFooter {
+		article {
+			border-radius: 0;
+		}
 }
